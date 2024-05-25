@@ -56,7 +56,7 @@ char binaryToChar(int bin) {
 }
 
 bool isValidMode(const std::string& mode) {
-    return mode == "NUM" || mode == "CHAR";
+    return mode == "NUM" || mode == "CHAR" || mode == "CLEAR";
 }
 
 bool isBinary(const std::string& bin) {

@@ -14,20 +14,28 @@ void BINARYSTART() {
         BINARYSTART();
         return;
     }
-    std::cout << "\nBIN >>> ";
-    std::cin >> bin;
     bin = removeLeadingZeros(bin);
     if (!isBinary(bin)) {
         std::cout << "Invalid binary number.\n";
         BINARYSTART();
         return;
     }
-    int num = std::stoi(bin);
     if (mode == "NUM") {
+        std::cout << "\nBIN >>> ";
+        std::cin >> bin;
+        int num = std::stoi(bin);
         std::cout << binaryToDecimal(num);
     }
     else if (mode == "CHAR") {
+        std::cout << "\nBIN >>> ";
+        std::cin >> bin;
+        int num = std::stoi(bin);
         std::cout << binaryToChar(num);
+    }
+    else if (mode == "CLEAR")
+    {
+        system("""cls""");
+        BINARYSTART();
     }
     std::cout << "\n";
     BINARYSTART();
