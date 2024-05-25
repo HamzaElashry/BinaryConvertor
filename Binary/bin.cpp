@@ -28,7 +28,7 @@ void BINARYSTART() {
         else
         {
             int num = std::stoi(bin);
-            std::cout << binaryToDecimal(num);
+            std::cout << binaryToDecimal(num) << "\n";
         }
     }
     else if (mode == "CHAR" || mode == "char" || mode == "Char" || mode == "letter" || mode == "Letter" || mode == "LETTER" || mode == "character" || mode == "Character" || mode == "CHARACTER") {
