@@ -97,7 +97,7 @@ std::string letterToBinary(char letter) {
 }
 
 bool isValidMode(const std::string& mode) {
-    return mode == "NUM" || mode == "num" || mode == "Num" || mode == "CHAR" || mode == "char" || mode == "Char" || mode == "CLEAR" || mode == "clear" || mode == "Clear" || mode == "EXIT" || mode == "exit" || mode == "Exit" || mode == "letter" || mode == "Letter" || mode == "LETTER" || mode == "character" || mode == "Character" || mode == "CHARACTER" || mode == "NUMBER" || mode == "Number" || mode == "number" || mode == "help" || mode == "Help" || mode == "decimal" || mode == "Decimal" || mode == "BIN" || mode == "bin" || mode == "Bin" || mode == "BINARY" || mode == "Binary" || mode == "binary";
+    return mode == "NUM" || mode == "num" || mode == "Num" || mode == "CHAR" || mode == "char" || mode == "Char" || mode == "CLEAR" || mode == "clear" || mode == "cmd" || mode == "CMD" || mode == "Clear" || mode == "EXIT" || mode == "exit" || mode == "Exit" || mode == "letter" || mode == "Letter" || mode == "LETTER" || mode == "character" || mode == "Character" || mode == "CHARACTER" || mode == "NUMBER" || mode == "Number" || mode == "number" || mode == "help" || mode == "Help" || mode == "decimal" || mode == "Decimal" || mode == "BIN" || mode == "bin" || mode == "Bin" || mode == "BINARY" || mode == "Binary" || mode == "binary";
 }
 
 bool isBinary(const std::string& bin) {

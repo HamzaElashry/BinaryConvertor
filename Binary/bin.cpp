@@ -29,6 +29,7 @@ void BINARYSTART() {
         {
             int num = std::stoi(bin);
             std::cout << binaryToDecimal(num) << "\n";
+            BINARYSTART();
         }
     }
     else if (mode == "CHAR" || mode == "char" || mode == "Char" || mode == "letter" || mode == "Letter" || mode == "LETTER" || mode == "character" || mode == "Character" || mode == "CHARACTER") {
@@ -45,6 +46,8 @@ void BINARYSTART() {
         {
             int num = std::stoi(bin);
             std::cout << binaryToChar(num);
+            std::cout << "\n";
+            BINARYSTART();
         }
     }
     else if (mode == "CLEAR" || mode == "clear" || mode == "Clear")
@@ -66,7 +69,7 @@ void BINARYSTART() {
     }
     else if (mode == "help" || mode == "Help")
     {
-        std::cout << "Number : Binary to decimal.\nChar : Binary to letter.\nExit : End the program.\nClear : Clear the output.\nHelp : Show help.\n";
+        std::cout << "Number : Binary to decimal.\nChar : Binary to letter.\nExit : End the program.\nClear : Clear the output.\ncmd : Return to cmd.\nHelp : Show help.\n";
         BINARYSTART();
     }
     else if (mode == "BIN" || mode == "bin" || mode == "Bin" ||
@@ -84,9 +87,13 @@ void BINARYSTART() {
         else {
             std::cout << "?\n";
         }
+        std::cout << "\n";
+        BINARYSTART();
     }
-    std::cout << "\n";
-    BINARYSTART();
+    else if (mode == "cmd" || mode == "CMD")
+    {
+        system("""cmd""");
+    }
 }
 
 int main() {
